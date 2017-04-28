@@ -1,5 +1,3 @@
-" Color palette
-
 let s:gui00   = "#000000"
 let s:gui01   = "#111111"
 let s:gui02   = "#191919"
@@ -52,12 +50,12 @@ let s:cterm0a = "252"
 let s:cterm0b = "253"
 let s:cterm0c = "255"
 
-let s:cterm10 = 039
-let s:cterm11 = 001
-let s:cterm12 = 002
-let s:cterm13 = 226
-let s:cterm14 = 208
-let s:cterm15 = 013
+let s:cterm10 = "039"
+let s:cterm11 = "001"
+let s:cterm12 = "002"
+let s:cterm13 = "226"
+let s:cterm14 = "208"
+let s:cterm15 = "013"
 
 let s:guiWhite = "#cccccc"
 let s:guiGray = "#555555"
@@ -65,12 +63,12 @@ let s:ctermWhite = "252"
 let s:ctermGray = "240"
 
 let g:airline#themes#phoenix#palette = {}
-let s:modified = { 'airline_c': [ s:blue00, '', s:cterm10, '', '' ] }
+let s:modified = { 'airline_c': [ '#40bdff', '', 039, '', '' ] }
 
 " Normal mode
-let s:N1 = [ s:gui00 , s:gui0a , s:cterm00 , s:cterm0a  ]
+let s:N1 = [ s:gui00    , s:gui0a , s:cterm00    , s:cterm0a  ]
 let s:N2 = [ s:guiWhite , s:gui02 , s:ctermWhite , s:cterm02  ]
-let s:N3 = [ s:gui09 , s:gui01 , s:cterm09 , s:cterm01  ]
+let s:N3 = [ s:gui09    , s:gui01 , s:cterm09    , s:cterm01  ]
 let g:airline#themes#phoenix#palette.normal = airline#themes#generate_color_map(s:N1, s:N2, s:N3)
 let g:airline#themes#phoenix#palette.normal_modified = s:modified
 
@@ -103,13 +101,13 @@ let g:airline#themes#phoenix#palette.inactive = airline#themes#generate_color_ma
 let g:airline#themes#phoenix#palette.inactive_modified = s:modified
 
 " CtrlP
-"if !get(g:, 'loaded_ctrlp', 0)
-  "finish
-"endif
+if !get(g:, 'loaded_ctrlp', 0)
+ "finish
+endif
 
-"let s:CP1 = [ s:guiWhite , s:gui01 , s:ctermWhite , s:cterm01  ]
-"let s:CP2 = [ s:guiWhite , s:gui03 , s:ctermWhite , s:cterm01  ]
-"let s:CP3 = [ s:guiWhite , s:gui0D , s:ctermWhite , s:cterm0D  ]
+let s:CP1 = [ s:guiWhite , s:gui01 , s:ctermWhite , s:cterm01  ]
+let s:CP2 = [ s:guiWhite , s:gui03 , s:ctermWhite , s:cterm01  ]
+let s:CP3 = [ s:guiWhite , s:gui0D , s:ctermWhite , s:cterm0D  ]
 
-"let g:airline#themes#phoenix#palette.ctrlp = airline#extensions#ctrlp#generate_color_map(s:CP1, s:CP2, s:CP3)
+let g:airline#themes#phoenix#palette.ctrlp = airline#extensions#ctrlp#generate_color_map(s:CP1, s:CP2, s:CP3)
 
