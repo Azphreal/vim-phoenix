@@ -54,7 +54,7 @@ let s:cterm0c = "255"
 
 let s:cterm10 = "039"
 let s:cterm11 = "001"
-let s:cterm12 = "002"
+let s:cterm12 = "003"
 let s:cterm13 = "226"
 let s:cterm14 = "208"
 let s:cterm15 = "013"
